@@ -11,12 +11,13 @@ import (
 )
 
 // Usage:
-//func someFunctionToMeasure() {
-//	tm := prof_timer.StartTimer("unique name, i.e. sqpSuggest.applySqp")
-//	defer prof_timer.EndTimer(tm)
-//
-//	// other code
-//}
+// func someFunctionToMeasure() {
+// 	tm := prof_timer.StartTimer("unique name, i.e. sqpSuggest.applySqp")
+// 	defer prof_timer.EndTimer(tm)
+
+// 	// other code
+// }
+// At some higher level func call prof_timer.GetTimersReport() to see measured times
 
 var (
 	staticTimers         = map[string]*timer{}
