@@ -1,0 +1,4 @@
+1. Install wrk
+2. wrk -t1 -c1 -d60s -s multi-request-json.lua  http://localhost:8890/web/3/suggest
+3. multi-request-json.lua reads queries from file queries.txt
+4. Note: prof_timer is still single threaded only, so arguments "-t1 -c1 -d60s" are mandatory
